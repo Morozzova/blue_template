@@ -12,12 +12,117 @@
 </head>
 
 <body>
-	<header class="header">
-	</header>
-	
-	<main class="main">
-	</main>
-	
-	<footer class="footer">
-	</footer>
+    <header class="header">
+        <p class="header__logo">Logo</p>
+        <h1 class="header__name">Название компании или слоган</h1>
+        <div class="header-container-right">
+            <p class="header__phone">8 800 555 3535</p>
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">Главная</li>
+                    <li class="main-menu__item">О нас</li>
+                    <li class="main-menu__item main-menu__item_active">Услуги</li>
+                    <li class="main-menu__item">Документы</li>
+                    <li class="main-menu__item">Контакты</li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a> /</li>
+                <li class="breadcrumbs__item"><a href="#">Услуги</a> /</li>
+                <li class="breadcrumbs__item"><a>Кухня</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="gallery">
+            <figure class="gallery__card">
+                <img class="gallery__image" src="images/gallery-big.jpg" width="608" height="407" alt="Симметричный гипергенный минерал">
+                <figcaption class="gallery__definition">
+                    <h3 class="gallery__title">Симметричный гипергенный минерал</h3>
+                    <p class="gallery__text">Гидродинамический удар, вследствие пространственной неоднородности почвенного покрова, искажает ламинарный осциллятор.</p>
+                </figcaption>
+            </figure>
+            <form>
+                <input type="radio" class="gallery__radio" id="item1">
+                <label class="gallery__item" for="item1">
+                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                </label>
+                <input type="radio" class="gallery__radio" id="item2">
+                <label class="gallery__item" for="item2">
+                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                </label>
+                <input type="radio" class="gallery__radio" id="item3">
+                <label class="gallery__item" for="item3">
+                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                </label>
+                <input type="radio" class="gallery__radio" id="item4">
+                <label class="gallery__item" for="item4">
+                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                </label>
+            </form>
+        </section>
+        <section class="description">
+            <h2 class="description__title">Симметричный минерал — актуальная национальная</h2>
+            <p class="description__text">Ведущий экзогенный геологический процесс - отрог дегидрирован. Прибор Качинского, которая в настоящее время находится ниже уровня моря, возникает плазменный белок.</p>
+            <p class="description__text">Еще в ранних работах Л.Д.Ландау показано, что впитывание пространственно отражает стеклянный синтез. Изучение локально вымывает в ультрафиолетовый полимолекулярный ассоциат, основными элементами которого являются обширные плосковершинные и пологоволнистые возвышенности.</p>
+            <p class="description__text">Плазменное образование переоткладывает неорганический шток. Зеркало пластично передает кристаллический эстуарий. Гончарный дренаж тягуч. Изучение локально вымывает в ультрафиолетовый полимолекулярный ассоциат, основными элементами которого являются обширные плосковершинные и пологоволнистые возвышенности.</p>
+        </section>
+        <section class="order">
+            <p class="order__question">Заказать прямо сейчас сейчас?</p>
+            <div class="order-wrapper">
+                <figure class="order__card">
+                    <img class="order__photo" src="images/order-photo.jpg" width="296" height="198" alt="Сибурина Лиза">
+                    <figcaption class="order__photo_text">Плазменное образование переоткладывает неорганический шток.
+                    </figcaption>
+                </figure>
+                <section class="order__contacts">
+                    <h2 class="order__name">Сибурина Лиза</h2>
+                    <table class="order__table">
+                        <tr>
+                            <td>Тел.:</td>
+                            <td>8 800 555 3535</td>
+                        </tr>
+                        <tr>
+                            <td>Эл. почта:</td>
+                            <td><a class="order__email" href="mailto:email@email">siburinal@company.biz</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="order__sepatator"></div>
+                    <p class="order__explanation">Плазменное образование переоткладывает неорганический шток. Зеркало пластично передает кристаллический эстуарий. Гончарный дренаж тягуч. Тяжелая вода, в отличие от классического случая, адсорбирует объект одинаково по всем направлениям. Кристаллизатор отталкивает плазменный окислитель.</p>
+                </section>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <table class="footer__table">
+            <tr>
+                <td>Адрес:</td>
+                <td>Россия, г. Екатиринбург ул. Московская, 74, к.215</td>
+            </tr>
+            <tr>
+                <td>Тел.:</td>
+                <td>8 800 555 3535</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><a class="footer__email" href="mailto:email@email">contact@company.biz</a>
+                </td>
+            </tr>
+        </table>
+        <p class="footer__logo">Logo</p>
+        <div class="footer-container-right">
+            <p class="footer__timetable">Часы работы: пн-пт 09:00-18:00</p>
+            <p class="footer__copyright">© 2006 – 2018. ООО “Компания Екб”.
+                <br>Все права защищены.</p>
+        </div>
+    </footer>
 </body>
