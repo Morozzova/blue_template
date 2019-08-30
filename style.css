@@ -103,12 +103,14 @@ body {
     padding-top: 10px;
     list-style: none;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 .breadcrumbs__link {
     color: #000000;
 }
 .main-content {
     display: flex;
+    align-items: flex-start;
 }
 .gallery {
     display: flex;
@@ -120,7 +122,7 @@ body {
     height: 407px;
     margin-left: 0;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 0;
     overflow: hidden;
 }
 .gallery__definition {
@@ -150,14 +152,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 0;
 }
 .gallery__item {
     cursor: pointer;
     width: 127px;
     height: 84px;
     padding: 0;
-    margin: 0;
     border: 0;
     outline: none;
 }
@@ -170,7 +171,7 @@ body {
     padding-left: 21px;
     padding-bottom: 8px;
     padding-right: 21px;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 35px;
     font-size: 25px;
     font-weight: normal;
@@ -190,7 +191,7 @@ body {
     width: 100%;
     margin: 0;
     padding-top: 17px;
-    text-align: center;
+    padding-left: 510px;
     font-size: 35px;
     z-index: 1;
 }
@@ -199,14 +200,14 @@ body {
     width: 4000px;
     height: 500px;
     background-color: #808d9d;
-    transform: rotate(10deg) translate(-50px, 265px);
+    transform: rotate(10deg) translate(-50px, 267px);
     transform-origin: 50%;
     z-index: 0;
 }
 .order-inner {
     position: relative;
     display: flex;
-    justify-content: center;
+    margin: 0 165px;
     color: #ffffff;
     z-index: 1;
 }
@@ -214,7 +215,7 @@ body {
     width: 317px;
     height: 308px;
     margin-bottom: 25px;
-    margin-left: 165px;
+    margin-left: 0;
     margin-right: 17px;
     background-color: #3f7594;
 }
@@ -231,7 +232,6 @@ body {
     line-height: 22px;
 }
 .order__contacts {
-    margin-right: 165px;
     margin-top: 64px;
 }
 .order__name {
@@ -253,27 +253,30 @@ body {
     text-decoration: none;
 }
 .order__sepatator {
-    width: 100%;
+    max-width: 1200px;
     height: 1px;
     background-color: #ffffff;
 }
 .order__explanation {
+    max-width: 1200px;
     margin-top: 12px;
     font-size: 16px;
 }
 .footer {
-    display: flex;
-    justify-content: space-between;
     background-color: #181c23;
     color: #ffffff;
     font-size: 13px;
-    margin: 0;
     padding-top: 18px;
     padding-bottom: 12px;
 }
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 165px;
+}
 .footer__table {
-    width: 215px;
-    padding-left: 165px;
+    width: auto;
+    box-sizing: content-box;
 }
 .footer__table_row {
     vertical-align: top;
@@ -297,7 +300,6 @@ body {
     text-transform: uppercase;
 }
 .footer-container-right {
-    padding-right: 165px;
     text-align: right;
     margin: 0;
 }
@@ -307,4 +309,78 @@ body {
 }
 .footer__copyright {
     margin: 0;
+}
+@media screen and (min-width: 1904px) {
+    .breadcrumbs__list,
+    .gallery__text,
+    .description__text,
+    .order__photo_text,
+    .order__explanation {
+        font-size: 17px;
+    }
+    .gallery__title,
+    .description__title {
+        font-size: 27px;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1483px) {
+    .header-inner {
+        max-width: 935px;
+    }
+    .header__logo {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .header__name {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery__card {
+        margin-right: 0;
+    }
+    .gallery__list {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .header-inner {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .main-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
+    .main-content {
+        flex-direction: column;
+        width: 935px;
+        margin: 0 auto;
+    }
+    .gallery {
+        margin: 0 auto;
+    }
+    .description {
+        margin-top: 30px;
+    }
+    .order__question {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .order-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
+    .footer-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 984px) {
+	
 }
