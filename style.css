@@ -27,7 +27,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin: 0 165px;
 }
 .header__logo {
@@ -92,6 +91,9 @@ body {
 .main-menu__link:hover::after {
     transform: scale(1);
 }
+.main {
+	 overflow: hidden;
+}
 .main-inner {
     margin: 0 165px;
 }
@@ -153,7 +155,7 @@ body {
     padding-top: 8px;
     padding-left: 21px;
     padding-bottom: 8px;
-	padding-right: 21px;
+    padding-right: 21px;
     margin-top: 5px;
     margin-bottom: 35px;
     font-size: 25px;
@@ -164,28 +166,45 @@ body {
 .description__text {
     padding-right: 10px;
 }
+.order {
 
-.order__question {
-    width: 100%;
-	margin: 0;
-	text-align: center;
-    font-size: 35px;
+   position: relative;
+    margin-top: 34px;
     background-color: #dadada;
+    
 }
-.order-wrapper {
-	display: flex;
-	justify-content: center;
-    color: #ffffff;
+.order__question {
+	position: relative;
+    width: 100%;
+    margin: 0;
+	padding-top: 17px;
+    text-align: center;
+    font-size: 35px;
+    z-index: 1;
+}
+.order__oblique-background {
+position: absolute;
+    width: 4000px;
+    height: 500px;
     background-color: #808d9d;
+    transform: rotate(10deg) translate(-50px, 265px);
+	transform-origin: 50%;
+    z-index: 0;
+}
+.order-inner {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 1;
 }
 .order__card {
     width: 317px;
     height: 308px;
-  margin-bottom: 25px;
-	margin-left: 165px;
-	margin-right: 17px;
+    margin-bottom: 25px;
+    margin-left: 165px;
+    margin-right: 17px;
     background-color: #3f7594;
-	
 }
 .order__photo {
     margin-top: 10px;
@@ -200,8 +219,8 @@ body {
     line-height: 22px;
 }
 .order__contacts {
-	margin-right: 165px;
-	margin-top: 64px;
+    margin-right: 165px;
+    margin-top: 64px;
 }
 .order__name {
     font-size: 32.73px;
@@ -209,13 +228,13 @@ body {
 }
 .order__table {
     height: 70px;
-	margin-top: 4px;
-	margin-bottom: 3px;
+    margin-top: 4px;
+    margin-bottom: 3px;
     font-size: 20.38px;
 }
 .order__table_first-column {
-	width: 100px;
-	font-size: 18.97px;
+    width: 100px;
+    font-size: 18.97px;
 }
 .order__email {
     color: #ffffff;
@@ -227,29 +246,29 @@ body {
     background-color: #ffffff;
 }
 .order__explanation {
-	margin-top: 12px;
+    margin-top: 12px;
     font-size: 16px;
 }
 .footer {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     background-color: #181c23;
     color: #ffffff;
     font-size: 13px;
     margin: 0;
-	padding-top: 18px;
-	padding-bottom: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
 }
 .footer__table {
     width: 215px;
-	padding-left: 165px;
-	
+    padding-left: 165px;
 }
 .footer__table_row {
     vertical-align: top;
 }
 .footer__table_first-column {
-	width: 48px;
+    width: 48px;
 }
 .footer__email {
     color: #ffffff;
@@ -257,25 +276,23 @@ body {
 }
 .footer__logo {
     width: auto;
-	height: 51px;
+    height: 51px;
     margin: 0;
-
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
     border: 3px solid #ffffff;
     font-size: 40.92px;
     text-transform: uppercase;
 }
 .footer-container-right {
-
-	padding-right: 165px;
+    padding-right: 165px;
     text-align: right;
     margin: 0;
 }
 .footer__timetable {
-	margin-top: 0;
-	margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 .footer__copyright {
     margin: 0;
