@@ -92,7 +92,7 @@ body {
     transform: scale(1);
 }
 .main {
-	 overflow: hidden;
+    overflow: hidden;
 }
 .main-inner {
     margin: 0 165px;
@@ -114,16 +114,8 @@ body {
     display: flex;
     margin-right: 30px;
 }
-.gallery__item {
-    cursor: pointer;
-}
-.gallery__input {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5px;
-    height: 410px;
-}
+
+
 .gallery__card {
     position: relative;
     width: 608px;
@@ -132,6 +124,7 @@ body {
     margin-right: 20px;
     margin-top: 5px;
 }
+
 .gallery__definition {
     position: absolute;
     bottom: 0;
@@ -151,6 +144,25 @@ body {
     margin: 0;
     margin-top: 7px;
 }
+.gallery__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	list-style: none;
+	padding-left: 0;
+    margin-top: 5px;
+
+}
+.gallery__item {
+    cursor: pointer;
+	
+	width: 127px;
+	height: 84px;
+}
+.gallery__item:hover {
+	opacity: 0.7;
+}
+
 .description__title {
     padding-top: 8px;
     padding-left: 21px;
@@ -167,32 +179,30 @@ body {
     padding-right: 10px;
 }
 .order {
-
-   position: relative;
+    position: relative;
     margin-top: 34px;
     background-color: #dadada;
-    
 }
 .order__question {
-	position: relative;
+    position: relative;
     width: 100%;
     margin: 0;
-	padding-top: 17px;
+    padding-top: 17px;
     text-align: center;
     font-size: 35px;
     z-index: 1;
 }
 .order__oblique-background {
-position: absolute;
+    position: absolute;
     width: 4000px;
     height: 500px;
     background-color: #808d9d;
     transform: rotate(10deg) translate(-50px, 265px);
-	transform-origin: 50%;
+    transform-origin: 50%;
     z-index: 0;
 }
 .order-inner {
-	position: relative;
+    position: relative;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -257,8 +267,7 @@ position: absolute;
     font-size: 13px;
     margin: 0;
     padding-top: 18px;
-    padding-bottom: 18px;
-
+    padding-bottom: 12px;
 }
 .footer__table {
     width: 215px;
