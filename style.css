@@ -5,3 +5,238 @@ body {
     background: #ffffff;
     color: #000000;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    color: #ffffff;
+    background-color: #3f7594;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1172px;
+    margin: 0 auto;
+}
+.header__logo {
+    width: auto;
+    height: auto;
+    margin: 0;
+    line-height: 70px;
+    border: 3px solid #ffffff;
+    font-size: 53.4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header__name {
+    width: 320px;
+    margin-left: 36px;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 35px;
+    font-weight: normal;
+}
+.header-container-right {
+    text-align: right;
+    margin: 0;
+}
+.header__phone {
+    margin-top: 11px;
+    margin-bottom: 20px;
+    font-size: 25.5px;
+}
+.main-menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    margin-bottom: 23px;
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.main-menu__item {
+    position: relative;
+}
+.main-menu__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.main-menu__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin-top: 8px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+.main-menu__link_active::after,
+.main-menu__link:hover::after {
+    transform: scale(1);
+}
+.main-inner {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+.breadcrumbs__list {
+    display: flex;
+    padding-left: 0;
+    padding-top: 10px;
+    list-style: none;
+    font-size: 15px;
+}
+.breadcrumbs__link {
+    color: #000000;
+}
+.main-content {
+    display: flex;
+}
+.gallery {
+    display: flex;
+    margin-right: 30px;
+}
+.gallery__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    height: 410px;
+}
+.gallery__card {
+    position: relative;
+    width: 608px;
+    height: 407px;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.gallery__definition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 28px;
+    padding-right: 68px;
+    padding-bottom: 25px;
+}
+.gallery__title {
+    font-size: 25px;
+    font-weight: normal;
+    color: #ffffff;
+    margin: 0;
+}
+.gallery__text {
+    color: #ffffff;
+    margin: 0;
+    margin-top: 7px;
+}
+.description__title {
+    width: 380px;
+    padding-top: 8px;
+    padding-left: 21px;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    font-size: 25px;
+    font-weight: normal;
+    background-color: #dadada;
+    box-sizing: border-box;
+}
+.description__text {
+    padding-right: 10px;
+}
+.order__question {
+    margin: 0;
+    font-size: 35px;
+    background-color: #dadada;
+}
+.order-wrapper {
+    color: #ffffff;
+    background-color: #808d9d;
+}
+.order__card {
+    width: 317px;
+    height: 308px;
+    margin: 0;
+    background-color: #3f7594;
+}
+.order__photo {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 17px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+.order__photo_text {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.order__name {
+    font-size: 32.73px;
+    font-weight: normal;
+}
+.order__table {
+    width: 315px;
+    height: 70px;
+    font-size: 20.38px;
+}
+.order__email {
+    color: #ffffff;
+    text-decoration: none;
+}
+.order__sepatator {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+.order__explanation {
+    font-size: 16px;
+}
+.footer {
+    background-color: #181c23;
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+}
+.footer__table {
+    width: 210px;
+}
+.footer__table_row {
+    vertical-align: top;
+}
+.footer__email {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__logo {
+    width: auto;
+    margin: 0;
+    line-height: 51px;
+    border: 3px solid #ffffff;
+    font-size: 40.92px;
+    text-transform: uppercase;
+}
+.footer-container-right {
+    text-align: right;
+    margin: 0;
+}
+.footer__copyright {
+    margin: 0;
+}

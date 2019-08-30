@@ -13,66 +13,76 @@
 
 <body>
     <header class="header">
-        <p class="header__logo">Logo</p>
-        <h1 class="header__name">Название компании или слоган</h1>
-        <div class="header-container-right">
-            <p class="header__phone">8 800 555 3535</p>
-            <nav class="main-menu">
-                <ul class="main-menu__list">
-                    <li class="main-menu__item">Главная</li>
-                    <li class="main-menu__item">О нас</li>
-                    <li class="main-menu__item main-menu__item_active">Услуги</li>
-                    <li class="main-menu__item">Документы</li>
-                    <li class="main-menu__item">Контакты</li>
-                </ul>
-
-            </nav>
+        <div class="header-inner">
+            <a class="header__logo" href="index.html">Logo</a>
+            <h1 class="header__name">Название компании или слоган</h1>
+            <div class="header-container-right">
+                <p class="header__phone">8 800 555 3535</p>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">О нас</a>
+                        </li>
+                        <li class="main-menu__item"><a class="main-menu__link main-menu__link_active" href="#">Услуги</a>
+                        </li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Документы</a>
+                        </li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main class="main">
-        <nav class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a href="#">Главная</a> /</li>
-                <li class="breadcrumbs__item"><a href="#">Услуги</a> /</li>
-                <li class="breadcrumbs__item"><a>Кухня</a>
-                </li>
-            </ul>
-        </nav>
 
-        <section class="gallery">
-            <figure class="gallery__card">
-                <img class="gallery__image" src="images/gallery-big.jpg" width="608" height="407" alt="Симметричный гипергенный минерал">
-                <figcaption class="gallery__definition">
-                    <h3 class="gallery__title">Симметричный гипергенный минерал</h3>
-                    <p class="gallery__text">Гидродинамический удар, вследствие пространственной неоднородности почвенного покрова, искажает ламинарный осциллятор.</p>
-                </figcaption>
-            </figure>
-            <form>
-                <input type="radio" class="gallery__radio" id="item1">
-                <label class="gallery__item" for="item1">
-                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
-                </label>
-                <input type="radio" class="gallery__radio" id="item2">
-                <label class="gallery__item" for="item2">
-                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
-                </label>
-                <input type="radio" class="gallery__radio" id="item3">
-                <label class="gallery__item" for="item3">
-                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
-                </label>
-                <input type="radio" class="gallery__radio" id="item4">
-                <label class="gallery__item" for="item4">
-                    <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
-                </label>
-            </form>
-        </section>
-        <section class="description">
-            <h2 class="description__title">Симметричный минерал — актуальная национальная</h2>
-            <p class="description__text">Ведущий экзогенный геологический процесс - отрог дегидрирован. Прибор Качинского, которая в настоящее время находится ниже уровня моря, возникает плазменный белок.</p>
-            <p class="description__text">Еще в ранних работах Л.Д.Ландау показано, что впитывание пространственно отражает стеклянный синтез. Изучение локально вымывает в ультрафиолетовый полимолекулярный ассоциат, основными элементами которого являются обширные плосковершинные и пологоволнистые возвышенности.</p>
-            <p class="description__text">Плазменное образование переоткладывает неорганический шток. Зеркало пластично передает кристаллический эстуарий. Гончарный дренаж тягуч. Изучение локально вымывает в ультрафиолетовый полимолекулярный ассоциат, основными элементами которого являются обширные плосковершинные и пологоволнистые возвышенности.</p>
-        </section>
+        <div class="main-inner">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a> /</li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Услуги</a> /</li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link">Кухня</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-content">
+                <section class="gallery">
+                    <figure class="gallery__card">
+                        <img class="gallery__image" src="images/gallery-big.jpg" width="608" height="407" alt="Симметричный гипергенный минерал">
+                        <figcaption class="gallery__definition">
+                            <h3 class="gallery__title">Симметричный гипергенный минерал</h3>
+                            <p class="gallery__text">Гидродинамический удар, вследствие пространственной неоднородности почвенного покрова, искажает ламинарный осциллятор.</p>
+                        </figcaption>
+                    </figure>
+                    <form class="gallery__input">
+                        <input type="radio" class="gallery__radio visually-hidden" id="item1" name="gallery__radio">
+                        <label class="gallery__item" for="item1">
+                            <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                        </label>
+                        <input type="radio" class="gallery__radio visually-hidden" id="item2" name="gallery__radio">
+                        <label class="gallery__item" for="item2">
+                            <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                        </label>
+                        <input type="radio" class="gallery__radio visually-hidden" id="item3" name="gallery__radio">
+                        <label class="gallery__item" for="item3">
+                            <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                        </label>
+                        <input type="radio" class="gallery__radio visually-hidden" id="item4" name="gallery__radio">
+                        <label class="gallery__item" for="item4">
+                            <img class="gallery__preview" src="images/gallery-small.jpg" width="127" height="84" alt="Симметричный гипергенный минерал">
+                        </label>
+                    </form>
+                </section>
+                <section class="description">
+                    <h2 class="description__title">Симметричный минерал — актуальная национальная</h2>
+                    <p class="description__text">Ведущий экзогенный геологический процесс - отрог дегидрирован. Прибор Качинского, которая в настоящее время находится ниже уровня моря, возникает плазменный белок.</p>
+                    <p class="description__text">Еще в ранних работах Л.Д.Ландау показано, что впитывание пространственно отражает стеклянный синтез. Изучение локально вымывает в ультрафиолетовый полимолекулярный ассоциат, основными элементами которого являются обширные плосковершинные и пологоволнистые возвышенности.</p>
+                    <p class="description__text">Плазменное образование переоткладывает неорганический шток. Зеркало пластично передает кристаллический эстуарий. Гончарный дренаж тягуч. Изучение локально вымывает в ультрафиолетовый полимолекулярный ассоциат, основными элементами которого являются обширные плосковершинные и пологоволнистые возвышенности.</p>
+                </section>
+            </div>
+        </div>
         <section class="order">
             <p class="order__question">Заказать прямо сейчас сейчас?</p>
             <div class="order-wrapper">
@@ -104,15 +114,15 @@
 
     <footer class="footer">
         <table class="footer__table">
-            <tr>
+            <tr class="footer__table_row">
                 <td>Адрес:</td>
                 <td>Россия, г. Екатиринбург ул. Московская, 74, к.215</td>
             </tr>
-            <tr>
+            <tr class="footer__table_row">
                 <td>Тел.:</td>
                 <td>8 800 555 3535</td>
             </tr>
-            <tr>
+            <tr class="footer__table_row">
                 <td>Email:</td>
                 <td><a class="footer__email" href="mailto:email@email">contact@company.biz</a>
                 </td>
