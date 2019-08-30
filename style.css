@@ -114,8 +114,6 @@ body {
     display: flex;
     margin-right: 30px;
 }
-
-
 .gallery__card {
     position: relative;
     width: 608px;
@@ -124,7 +122,6 @@ body {
     margin-right: 20px;
     margin-top: 5px;
 }
-
 .gallery__definition {
     position: absolute;
     bottom: 0;
@@ -148,21 +145,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-	list-style: none;
-	padding-left: 0;
     margin-top: 5px;
-
 }
 .gallery__item {
     cursor: pointer;
-	
-	width: 127px;
-	height: 84px;
+    width: 127px;
+    height: 84px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
 }
-.gallery__item:hover {
-	opacity: 0.7;
+.gallery__item:hover,
+.gallery__item:focus {
+    opacity: 0.7;
 }
-
 .description__title {
     padding-top: 8px;
     padding-left: 21px;
