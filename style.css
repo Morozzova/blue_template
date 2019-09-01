@@ -29,6 +29,10 @@ body {
     align-items: center;
     margin: 0 165px;
 }
+.header-container-left {
+    display: flex;
+    align-items: center;
+}
 .header__logo {
     width: auto;
     height: auto;
@@ -42,7 +46,6 @@ body {
     cursor: pointer;
 }
 .header__name {
-    width: 320px;
     margin-left: 36px;
     margin-right: auto;
     margin-top: 17px;
@@ -86,8 +89,8 @@ body {
 }
 .main-menu__link::after {
     content: "";
-    display: block;
     position: absolute;
+    display: block;
     width: 100%;
     height: 2px;
     margin-top: 8px;
@@ -126,8 +129,6 @@ body {
 }
 .gallery__card {
     position: relative;
-    width: 608px;
-    height: 407px;
     margin-left: 0;
     margin-right: 20px;
     margin-top: 0;
@@ -137,7 +138,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 110px;
+    height: auto;
     padding-left: 28px;
     padding-right: 68px;
     padding-bottom: 25px;
@@ -164,7 +165,6 @@ body {
 }
 .gallery__item {
     cursor: pointer;
-    width: 127px;
     height: 84px;
     padding: 0;
     border: 0;
@@ -196,7 +196,7 @@ body {
 }
 .order__question {
     position: relative;
-    width: 100%;
+    width: auto;
     margin: 0;
     padding-top: 17px;
     padding-left: 510px;
@@ -335,11 +335,17 @@ body {
     .footer {
         font-size: 15px;
     }
+    .header-inner,
+    .main-inner,
+    .footer-inner,
+    .order__question,
+    .order-inner {
+        width: 1574px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 @media screen and (max-width: 1483px) {
-    .header-inner {
-        max-width: 935px;
-    }
     .header__logo {
         font-size: 40px;
         line-height: 48px;
@@ -359,17 +365,107 @@ body {
     }
 }
 @media screen and (max-width: 1280px) {
-    .header-inner {
+    /* бургер начало */
+    .main-menu__showmenu,
+    .main-menu__back {
+        cursor: pointer;
+        color: #ffffff;
+    }
+    .main-menu__showmenu {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        margin-left: 0px;
+        margin-bottom: 17px;
+        margin-top: 17px;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 27px;
+        color: #ffffff;
+    }
+    .main-menu__back {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #ffffff;
+    }
+    .main-menu__list {
+        color: #ffffff;
+        overflow: hidden;
+    }
+    .main-menu__list {
+        position: absolute;
+        display: block;
+        top: -400px;
+        right: 0;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        line-height: 2em;
+        background-color: #181c23;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: -webkit-transform .3s;
+        transition: -webkit-transform .3s;
+        -o-transition: transform .3s;
+        transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s;
+        will-change: transform;
+        z-index: 1;
+    }
+    .main-menu__item {
         margin: 0 auto;
-        box-sizing: border-box;
+        padding: 20px;
+        padding-right: 50px;
+        text-decoration: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .main-menu__link::after {
+        display: none;
+    }
+    .main-menu__link_active .main-menu__item {
+        background-color: #ffffff;
+        color: #181c23;
+    }
+    .main-menu__item:hover {
+        background-color: #dadada;
+        color: #000000;
+        font-size: 30px;
+    }
+    .main-menu__link {
+        color: inherit;
+    }
+    .main-menu::-webkit-scrollbar {
+        display: none;
+    }
+    .main-menu__check:checked ~ .main-menu__list {
+        -webkit-transform: translateY(125%);
+        -ms-transform: translateY(125%);
+        transform: translateY(125%);
+    }
+    /* бургер конец */
+    .header-inner {
+        width: 755px;
+        margin: 0 auto;
+    }
+    .header__phone {
+        margin-bottom: 0;
+        margin-left: auto;
     }
     .main-inner {
-        width: 935px;
+        width: 755px;
         margin: 0 auto;
     }
     .main-content {
+        width: auto;
         flex-direction: column;
-        width: 935px;
         margin: 0 auto;
     }
     .gallery {
@@ -394,82 +490,99 @@ body {
         margin: 0 auto;
     }
     .footer-inner {
-        width: 935px;
+        width: 755px;
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 984px) {
-    /* бургер начало */
-    .main-menu__showmenu,
-    .main-menu__back {
-        cursor: pointer;
-        color: #ffffff;
+@media screen and (max-width: 830px) {
+    .header-inner {
+        width: 607px;
+    }
+    .main-inner {
+        width: 607px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery__card {
+        margin-right: 0;
+    }
+    .gallery__list {
+        flex-direction: row;
+    }
+    .footer-inner {
+        width: 607px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .header-inner {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header-container-left {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .header__name {
+        margin: 0;
+        margin-top: 11px;
+        font-size: 20px;
+    }
+    .header__logo {
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header__phone {
+        font-size: 20px;
+        margin-bottom: 22px
     }
     .main-menu__showmenu {
-        position: relative;
-        z-index: 3;
-        display: inline-block;
-        margin-left: 0px;
-        margin-bottom: 17px;
-        margin-top: 17px;
-        padding-top: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 36px;
-        color: #ffffff;
+        margin-bottom: 5px;
     }
-    .main-menu__back {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        color: #ffffff;
+    .main-inner {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .main-menu__list {
-        color: #ffffff;
-        overflow: hidden;
+    .gallery__title {
+        font-size: 18px;
     }
-    .main-menu__list {
-        position: absolute;
-        top: 103px;
-        right: 0;
-        display: block;
-        width: 80%;
-        margin: 0;
-        padding: 17px 0;
-        line-height: 2em;
-        background-color: #181c23;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        -webkit-transform: translateY(-130%);
-        -ms-transform: translateY(-130%);
-        transform: translateY(-130%);
-        -webkit-transition: -webkit-transform .3s;
-        transition: -webkit-transform .3s;
-        -o-transition: transform .3s;
-        transition: transform .3s;
-        transition: transform .3s, -webkit-transform .3s;
-        will-change: transform;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        z-index: 1;
+    .gallery__image {
+        min-width: 400px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
-    .main-menu__item {
-        display: block;
-        text-align: right;
-        padding: 20px;
-        padding-right: 50px;
-        text-decoration: none;
-        color: #ffffff;
+   .gallery__text {
+        font-size: 14px
     }
-    .main-menu::-webkit-scrollbar {
-        display: none;
+    .footer {
+        font-size: 10px;
     }
-    .main-menu__check:checked ~ .main-menu__list {
-        -webkit-transform: translateY(10%);
-        -ms-transform: translateY(10%);
-        transform: translateY(10%);
+    .footer-inner {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    /* бургер конец */
+    .footer__table {
+        width: auto;
+    }
+    .footer__logo {
+        margin: auto 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .gallery__item {
+        height: auto;
+        background-color: #ffffff;
+        margin-right: 5px;
+    }
+    .gallery__image_small {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
