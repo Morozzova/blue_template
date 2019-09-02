@@ -62,15 +62,15 @@ body {
     margin-bottom: 20px;
     font-size: 25.5px;
 }
+.header__phone_button {
+    display: none;
+}
 .main-menu__showmenu {
     transform: rotate(90deg) translateY(-15px);
 }
 .main-menu__check,
 .main-menu__showmenu,
-.main-menu__back,
-.phone__check,
-.phone__show,
-.phone__back {
+.main-menu__back {
     display: none;
 }
 .main-menu__list {
@@ -539,14 +539,13 @@ body {
         font-size: 30px;
         margin: 0;
     }
-	.order__oblique-background::before {
+    .order__oblique-background::before {
         height: 250px;
     }
     .order-inner {
         width: auto;
         margin: 0 20px;
     }
-   
     .order__photo_text,
     .order__explanation {
         font-size: 14px;
@@ -585,12 +584,12 @@ body {
         padding-bottom: 20px;
     }
     .order__oblique-background {
-	    height: 250px
-	} 
-	.order__oblique-background::before {
+        height: 250px
+    }
+    .order__oblique-background::before {
         height: 400px;
     }
-	.order__card {
+    .order__card {
         margin: 0;
     }
     .order__contacts {
@@ -657,11 +656,11 @@ body {
     .gallery__text {
         font-size: 14px
     }
-	.order-inner {
-	 width: auto;
+    .order-inner {
+        width: auto;
         margin-left: 20px;
-        margin-right: 20px;	
-	}
+        margin-right: 20px;
+    }
     .footer {
         font-size: 10px;
     }
@@ -689,39 +688,36 @@ body {
     }
     .header__name {
         font-size: 16px;
-    }
-    .phone__show,
-    .phone__back {
-        cursor: pointer;
+        padding-right: 10px;
     }
     .header-container-right {
         position: relative;
     }
     .header__phone {
+        display: none;
+        width: 140px;
+        height: auto;
+        padding: 10px;
         position: absolute;
-        left: -150px;
-        top: -30px;
-        background-color: #3f7594;
-        transform: translateY(0);
-        transition: transform 0.3s;
+        top: 65px;
+        left: -155px;
+        background-color: #181c23;
+	    z-index: 2;
     }
-    .phone__check {
+    .header__phone_abled {
         display: block;
-        position: relative;
     }
-    .phone__check + .phone__show {
-        position: relative;
-    }
-    .phone__check + span {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background: url("images/phone.png");
+    .header__phone_button {
+        display: block;
+        background-color: #3f7594;
+        border: none;
+        margin-top: 3px;
         cursor: pointer;
     }
-    .phone__check:checked ~ .header__phone {
-        transform: translateY(50px);
-    }
+
+	   .main-menu__list {
+	width: 300px;
+	}
     .main {
         padding-top: 65px;
     }
@@ -763,11 +759,5 @@ body {
     .footer__timetable {
         text-align: left;
         padding-right: 20px;
-    }
-}
-@media screen and (max-width: 410px) {
-    .header__phone {
-        font-size: 16px;
-        margin-bottom: 5px;
     }
 }
