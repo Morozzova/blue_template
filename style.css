@@ -211,6 +211,7 @@ body {
     text-align: center;
     padding-top: 17px;
     font-size: 35px;
+    z-index: 1;
 }
 .order__oblique-background {
     position: absolute;
@@ -236,17 +237,17 @@ body {
     display: flex;
     margin: 0 165px;
     color: #ffffff;
- 
 }
 .order__card {
-
     width: 317px;
-    height: 308px;
+    height: auto;
     margin-bottom: 25px;
+    margin-top: auto;
     margin-left: 0;
     margin-right: 17px;
+    padding-bottom: 20px;
     background-color: #3f7594;
-	z-index: 1;
+    z-index: 1;
 }
 .order__photo {
     margin-top: 10px;
@@ -283,13 +284,11 @@ body {
 }
 .order__sepatator {
     max-width: 1200px;
-
     height: 1px;
     background-color: #ffffff;
 }
 .order__explanation {
     max-width: 1200px;
-
     margin-top: 12px;
     font-size: 16px;
 }
@@ -424,6 +423,10 @@ body {
     .description {
         margin-top: 30px;
     }
+    .order-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
     .footer-inner {
         width: 935px;
         margin: 0 auto;
@@ -532,6 +535,31 @@ body {
         width: auto;
         margin: 0 20px;
     }
+    .order__question {
+        font-size: 30px;
+        margin: 0;
+    }
+	.order__oblique-background::before {
+        height: 250px;
+    }
+    .order-inner {
+        width: auto;
+        margin: 0 20px;
+    }
+    .order__card {
+        margin: 0;
+    }
+    .order__photo_text,
+    .order__explanation {
+        font-size: 14px;
+    }
+    .order__photo {
+        width: 200px;
+        height: auto;
+    }
+    .order__name {
+        font-size: 26px;
+    }
     .footer-inner {
         width: auto;
         margin: 0 20px;
@@ -554,6 +582,38 @@ body {
     }
     .gallery__list {
         flex-direction: row;
+    }
+    .order__question {
+        padding-bottom: 20px;
+    }
+    .order__oblique-background {
+	    height: 250px
+	} 
+	.order__oblique-background::before {
+        height: 400px;
+    }
+    .order__contacts {
+        margin-top: 0;
+    }
+    .order__name {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .order__table {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .order-inner {
+        flex-direction: column;
+        align-items: center;
+        width: 607px;
+        margin: 0 auto;
+    }
+    .order__photo {
+        width: 296px;
+    }
+    .order__photo_text {
+        font-size: 16px;
     }
     .footer-inner {
         width: 607px;
@@ -596,6 +656,11 @@ body {
     .gallery__text {
         font-size: 14px
     }
+	.order-inner {
+	 width: auto;
+        margin-left: 20px;
+        margin-right: 20px;	
+	}
     .footer {
         font-size: 10px;
     }
@@ -615,7 +680,7 @@ body {
     .header {
         position: fixed;
         box-shadow: none;
-        z-index: 1;
+        z-index: 2;
     }
     .header__logo {
         font-size: 25px;
