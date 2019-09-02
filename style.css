@@ -67,7 +67,10 @@ body {
 }
 .main-menu__check,
 .main-menu__showmenu,
-.main-menu__back {
+.main-menu__back,
+.phone__check,
+.phone__show,
+.phone__back {
     display: none;
 }
 .main-menu__list {
@@ -205,19 +208,27 @@ body {
 .order__question {
     position: relative;
     width: auto;
-    margin: 0;
+    text-align: center;
     padding-top: 17px;
-    padding-left: 510px;
     font-size: 35px;
-    z-index: 1;
 }
 .order__oblique-background {
     position: absolute;
-    width: 4000px;
-    height: 500px;
-    background-color: #808d9d;
-    transform: rotate(10deg) translate(-50px, 267px);
-    transform-origin: 50%;
+    bottom: 0;
+    width: 100%;
+    min-height: 138px;
+    height: auto;
+    background: #808d9d;
+}
+.order__oblique-background::before {
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 312px;
+    background-image: linear-gradient(to top right, #808d9d 50%, transparent 50%);
     z-index: 0;
 }
 .order-inner {
@@ -225,15 +236,17 @@ body {
     display: flex;
     margin: 0 165px;
     color: #ffffff;
-    z-index: 1;
+ 
 }
 .order__card {
+
     width: 317px;
     height: 308px;
     margin-bottom: 25px;
     margin-left: 0;
     margin-right: 17px;
     background-color: #3f7594;
+	z-index: 1;
 }
 .order__photo {
     margin-top: 10px;
@@ -270,11 +283,13 @@ body {
 }
 .order__sepatator {
     max-width: 1200px;
+
     height: 1px;
     background-color: #ffffff;
 }
 .order__explanation {
     max-width: 1200px;
+
     margin-top: 12px;
     font-size: 16px;
 }
@@ -362,6 +377,16 @@ body {
         margin-left: 15px;
         font-size: 25px;
     }
+    .header__phone {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .main-menu__list {
+        margin-bottom: 9px;
+        margin-top: 7px;
+        width: 450px;
+        font-size: 16px;
+    }
     .gallery {
         flex-direction: column;
     }
@@ -373,6 +398,50 @@ body {
     }
 }
 @media screen and (max-width: 1280px) {
+    .header-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
+    .main-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
+    .main-content {
+        width: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .gallery {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .gallery__card {
+        margin-right: 20px;
+    }
+    .gallery__list {
+        flex-direction: column;
+    }
+    .description {
+        margin-top: 30px;
+    }
+    .footer-inner {
+        width: 935px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header-inner {
+        width: auto;
+        margin: 0 20px;
+    }
+    .header-container-right {
+        display: flex;
+        align-items: center;
+    }
+    .header__phone {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     /* бургер начало */
     .main-menu__showmenu,
     .main-menu__back {
@@ -459,55 +528,23 @@ body {
         transform: translateY(135%);
     }
     /* бургер конец */
-    .header-inner {
-        width: 755px;
-        margin: 0 auto;
-    }
-    .header__phone {
-        margin-bottom: 0;
-        margin-left: auto;
-    }
     .main-inner {
-        width: 755px;
-        margin: 0 auto;
-    }
-    .main-content {
         width: auto;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .gallery {
-        flex-direction: row;
-        margin: 0 auto;
-    }
-    .gallery__card {
-        margin-right: 20px;
-    }
-    .gallery__list {
-        flex-direction: column;
-    }
-    .description {
-        margin-top: 30px;
-    }
-    .order__question {
-        padding-left: 0px;
-        text-align: center;
-    }
-    .order-inner {
-        width: 935px;
-        margin: 0 auto;
+        margin: 0 20px;
     }
     .footer-inner {
-        width: 755px;
-        margin: 0 auto;
+        width: auto;
+        margin: 0 20px;
     }
 }
 @media screen and (max-width: 830px) {
     .header-inner {
         width: 607px;
+        margin: 0 auto;
     }
     .main-inner {
         width: 607px;
+        margin: 0 auto;
     }
     .gallery {
         flex-direction: column;
@@ -520,6 +557,7 @@ body {
     }
     .footer-inner {
         width: 607px;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 680px) {
@@ -528,13 +566,9 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .header-container-left {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
     .header__name {
-        margin: 0;
-        margin-top: 11px;
+        margin-top: auto;
+        margin-bottom: auto;
         font-size: 20px;
     }
     .header__logo {
@@ -545,10 +579,6 @@ body {
     }
     .header__phone {
         font-size: 20px;
-        margin-bottom: 22px
-    }
-    .main-menu__showmenu {
-        margin-bottom: 5px;
     }
     .main-inner {
         width: auto;
@@ -582,6 +612,53 @@ body {
     }
 }
 @media screen and (max-width: 575px) {
+    .header {
+        position: fixed;
+        box-shadow: none;
+        z-index: 1;
+    }
+    .header__logo {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .header__name {
+        font-size: 16px;
+    }
+    .phone__show,
+    .phone__back {
+        cursor: pointer;
+    }
+    .header-container-right {
+        position: relative;
+    }
+    .header__phone {
+        position: absolute;
+        left: -150px;
+        top: -30px;
+        background-color: #3f7594;
+        transform: translateY(0);
+        transition: transform 0.3s;
+    }
+    .phone__check {
+        display: block;
+        position: relative;
+    }
+    .phone__check + .phone__show {
+        position: relative;
+    }
+    .phone__check + span {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: url("images/phone.png");
+        cursor: pointer;
+    }
+    .phone__check:checked ~ .header__phone {
+        transform: translateY(50px);
+    }
+    .main {
+        padding-top: 65px;
+    }
     .gallery__definition {
         padding: 10px;
     }
@@ -619,16 +696,10 @@ body {
     }
     .footer__timetable {
         text-align: left;
+        padding-right: 20px;
     }
 }
 @media screen and (max-width: 410px) {
-    .header__logo {
-        font-size: 25px;
-        line-height: 28px;
-    }
-    .header__name {
-        font-size: 16px;
-    }
     .header__phone {
         font-size: 16px;
         margin-bottom: 5px;
