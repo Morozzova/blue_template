@@ -546,9 +546,7 @@ body {
         width: auto;
         margin: 0 20px;
     }
-    .order__card {
-        margin: 0;
-    }
+   
     .order__photo_text,
     .order__explanation {
         font-size: 14px;
@@ -591,6 +589,9 @@ body {
 	} 
 	.order__oblique-background::before {
         height: 400px;
+    }
+	.order__card {
+        margin: 0;
     }
     .order__contacts {
         margin-top: 0;
