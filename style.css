@@ -777,7 +777,7 @@ body {
     .header-container-right {
         position: relative;
     }
-       .header__phone {
+    .header__phone {
         display: block;
         width: 140px;
         height: auto;
@@ -787,20 +787,13 @@ body {
         left: -155px;
         background-color: #181c23;
         z-index: 2;
-        -webkit-transform: translateY(0px);
-            -ms-transform: translateY(0px);
-                transform: translateY(0px);
-        -webkit-transition: -webkit-transform 0.1s linear;
-        transition: -webkit-transform 0.1s linear;
-        -o-transition: transform 0.1s linear;
-        transition: transform 0.1s linear;
-        transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+        -webkit-transition: top 0.1s linear;
+        -o-transition: top 0.1s linear;
+        transition: top 0.1s linear;
     }
     .header__phone_abled {
         display: block;
-        -webkit-transform: translateY(125px);
-            -ms-transform: translateY(125px);
-                transform: translateY(125px);
+        top: 65px;
     }
     .header__phone_button {
         display: block;
