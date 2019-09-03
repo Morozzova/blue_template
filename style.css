@@ -220,6 +220,7 @@ body {
     height: 84px;
     padding: 0;
     border: 0;
+    outline: none;
 }
 .gallery__item:hover,
 .gallery__item:focus {
