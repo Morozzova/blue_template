@@ -220,7 +220,6 @@ body {
     height: 84px;
     padding: 0;
     border: 0;
-    outline: none;
 }
 .gallery__item:hover,
 .gallery__item:focus {
@@ -855,6 +854,14 @@ body {
     }
     .footer__timetable {
         text-align: left;
-        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .footer__timetable {
+        width: 100px;
+        margin-bottom: 0;
+    }
+    .footer__days {
+        display: inline-block;
     }
 }
