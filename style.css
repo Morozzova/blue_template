@@ -14,7 +14,7 @@ body {
     padding: 0;
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -23,18 +23,18 @@ body {
     color: #ffffff;
     background-color: #3f7594;
     -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .header-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0 165px;
 }
 .header-container-left {
@@ -42,8 +42,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .header__logo {
     width: auto;
@@ -79,8 +79,8 @@ body {
 }
 .main-menu__showmenu {
     -webkit-transform: rotate(90deg) translateY(-15px);
-        -ms-transform: rotate(90deg) translateY(-15px);
-            transform: rotate(90deg) translateY(-15px);
+    -ms-transform: rotate(90deg) translateY(-15px);
+    transform: rotate(90deg) translateY(-15px);
 }
 .main-menu__check,
 .main-menu__showmenu,
@@ -92,8 +92,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 540px;
     margin-bottom: 23px;
     position: relative;
@@ -120,14 +120,14 @@ body {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-            transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
 }
 .main-menu__link_active::after,
 .main-menu__link:hover::after {
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 .main {
     overflow: hidden;
@@ -153,8 +153,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 .gallery {
     display: -webkit-box;
@@ -187,9 +187,9 @@ body {
     padding-bottom: 25px;
     background: rgba(0, 0, 0, 0.65);
     -webkit-box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.65);
-            box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.65);
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 .gallery__title {
     font-size: 25px;
@@ -208,11 +208,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-top: 0;
 }
 .gallery__item {
@@ -237,7 +237,7 @@ body {
     font-weight: normal;
     background-color: #dadada;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 .description__text {
     padding-right: 10px;
@@ -301,7 +301,7 @@ body {
     margin-bottom: 17px;
     margin-right: 10px;
     -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
-            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 .order__photo_text {
     margin-left: 20px;
@@ -349,8 +349,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 0 165px;
     padding-top: 18px;
     padding-bottom: 12px;
@@ -360,7 +360,7 @@ body {
     width: auto;
     margin-bottom: auto;
     -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
 }
 .footer__table_row {
     vertical-align: top;
@@ -441,8 +441,8 @@ body {
     .gallery {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .gallery__card {
         margin-right: 0;
@@ -450,8 +450,8 @@ body {
     .gallery__list {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -467,15 +467,15 @@ body {
         width: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         margin: 0 auto;
     }
     .gallery {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
         margin: 0 auto;
     }
     .gallery__card {
@@ -484,8 +484,8 @@ body {
     .gallery__list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .description {
         margin-top: 30px;
@@ -509,8 +509,8 @@ body {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .header__phone {
         margin-top: auto;
@@ -645,8 +645,8 @@ body {
     .gallery {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .gallery__card {
         margin-right: 0;
@@ -654,8 +654,8 @@ body {
     .gallery__list {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
     .order__question {
         padding-bottom: 20px;
@@ -683,11 +683,11 @@ body {
     .order-inner {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         width: 607px;
         margin: 0 auto;
     }
@@ -734,7 +734,7 @@ body {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
     }
     .gallery__text {
         font-size: 14px
@@ -763,7 +763,7 @@ body {
     .header {
         position: fixed;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
         z-index: 2;
     }
     .header__logo {
@@ -777,19 +777,30 @@ body {
     .header-container-right {
         position: relative;
     }
-    .header__phone {
-        display: none;
+       .header__phone {
+        display: block;
         width: 140px;
         height: auto;
         padding: 10px;
         position: absolute;
-        top: 65px;
+        top: -60px;
         left: -155px;
         background-color: #181c23;
         z-index: 2;
+        -webkit-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+                transform: translateY(0px);
+        -webkit-transition: -webkit-transform 0.1s linear;
+        transition: -webkit-transform 0.1s linear;
+        -o-transition: transform 0.1s linear;
+        transition: transform 0.1s linear;
+        transition: transform 0.1s linear, -webkit-transform 0.1s linear;
     }
     .header__phone_abled {
         display: block;
+        -webkit-transform: translateY(125px);
+            -ms-transform: translateY(125px);
+                transform: translateY(125px);
     }
     .header__phone_button {
         display: block;
@@ -824,17 +835,17 @@ body {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
     }
     .footer-inner {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
     }
     .footer__logo {
         margin: 0;
@@ -845,8 +856,8 @@ body {
         display: flex;
         width: 100%;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         margin-top: 20px;
     }
     .footer__timetable {
